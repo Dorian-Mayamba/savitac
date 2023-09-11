@@ -1,0 +1,20 @@
+@media screen and (min-device-width:1024px){
+    .container > .img-link > .navbar-brand > img{
+        width: 150px;
+        aspect-ratio: 1/1;
+    }
+}
+
+
+@media screen and (max-device-width:468px) {
+    .container > .img-link > .navbar-brand > img{
+        width: 180px !important;
+        aspect-ratio: 1/1;
+    }
+}
+
+@media screen and (max-device-width:958px) {
+    .container > .img-link > .navbar-brand > img{
+        width: 350px;
+    }
+}

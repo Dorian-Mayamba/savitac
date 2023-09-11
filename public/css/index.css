@@ -1,0 +1,6 @@
+.container > .banner{
+    background: url('../images/environment-banner.jpg') no-repeat;
+    height: 75vh;
+    background-size: 100% 100%;
+    border-radius: 1.4rem;
+}
