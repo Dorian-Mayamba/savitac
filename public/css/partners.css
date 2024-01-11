@@ -1,0 +1,24 @@
+body{
+    overflow-x: hidden;
+}
+
+.jumbotron{
+    background: url('../images/Collaboration_Banner.png') no-repeat;
+    height: 55vh;
+    background-size: 100% 100%;
+    border-radius: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size:1.6rem;
+    text-align: center;
+    filter: brightness(90%);
+}
+
+@media screen and (max-device-width:468px){
+    .jumbotron{
+        height: 25vh;
+    }
+}

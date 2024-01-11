@@ -7,7 +7,6 @@
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 
-@import 'styles';
+@import 'slick-slider/slick/slick';
 
-@import "slick-carousel/slick/slick";
-@import "slick-carousel/slick/slick-theme";
+@import 'slick-slider/slick/slick-theme';

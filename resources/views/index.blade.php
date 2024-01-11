@@ -2,12 +2,13 @@
 
 
 @section('content')
+    <div class="jumbotron mb-4">
+        <div class="welcome-box">
+            <h1> Savitac</h1>
+            <p> Un cabinet spécialisé sur <br/>le Conseil en management qualité,<br/> sécurité et affaires.</p>
+        </div>
+    </div>
     <div class="container">
-                <div class="banner">
-
-                </div>
-
-                <h1 class="text-center text-green"><small>Savitac:</small></h1>
                 <p>
                     Savitac est un cabinet spécialisé dans le conseil en management qualité, sécurité et affaires, 
                     Savitac aide aussi les entreprises et les collectivités locales dans La prise en compte de l’impact environnemental de leurs activités, 

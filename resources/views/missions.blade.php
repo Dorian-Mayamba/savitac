@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="container carousel-block">
-    <div class="jumbotron" id="mission-banner">
+<div class="jumbotron" id="mission-banner">
 
-    </div>
+</div>
+<section class="container carousel-block">
 	<div class="mx-3 row slick-slider">
 		<div class="col-md-8">
 			<h2 class="text-center text-green"><small>Qualité</small></h2>
