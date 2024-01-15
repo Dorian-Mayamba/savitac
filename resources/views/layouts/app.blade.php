@@ -53,6 +53,10 @@
                                 class="nav-link {{ request()->is('missions') ? 'active' : '' }}">Nos missions</a>
                         </li>
                         <li class="nav-item">
+                            <a href="{{ route('mines') }}" 
+                            class="nav-link {{ request()->is('mines') ? 'active' : '' }}">Mines</a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ route('contact') }}"
                                 class="nav-link {{ request()->is('contact') ? 'active' : '' }}">Nous contacter</a>
                         </li>

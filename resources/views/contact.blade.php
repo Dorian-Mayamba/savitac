@@ -29,7 +29,7 @@
                 <h2><small>Voici nos coordonnées.</small></h2>
                 <p><strong>Telephone: J.Mayamba</strong> +33 7 66 50 95 57</p>
                 <div class="contact-image">
-                    <img class="rounded" src="{{ asset('images/700-contact-us.jpg') }}" alt="contact-image">
+                    <img class="rounded w-100" src="{{ asset('images/700-contact-us.jpg') }}" alt="contact-image">
                 </div>
             </div>
         </div>

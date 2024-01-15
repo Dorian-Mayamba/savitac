@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\EditPartnerController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\FormationController;
+use App\Http\Controllers\MinesController;
 use App\Http\Controllers\MissionController;
 use App\Http\Controllers\PartnerController;
 use Illuminate\Support\Facades\Route;
@@ -29,7 +30,9 @@ Route::middleware('http')->group(function () {
     Route::get('/partenaires-json', [PartnerController::class, 'getPartners'])->name('partner-json');
     Route::get('/formations', [FormationController::class, 'showFormationPage'])->name('formations');
     Route::get('/contact', [ContactController::class, 'showContactPage'])->name('contact');
+    Route::post('/contact', [ContactController::class, 'sendMessage']);
     Route::get('/missions', [MissionController::class, 'showMissionPage'])->name('missions');
+    Route::get('/mines', [MinesController::class, 'index'])->name('mines');
 
     // ------------------------------------------Admin Route-----------------------------
     Route::middleware('admin')->group(function () {
