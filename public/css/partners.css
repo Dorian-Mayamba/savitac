@@ -2,7 +2,7 @@ body{
     overflow-x: hidden;
 }
 
-.jumbotron{
+#partner-banner{
     background: url('../images/Collaboration_Banner.png') no-repeat;
     height: 55vh;
     background-size: 100% 100%;
@@ -18,7 +18,7 @@ body{
 }
 
 @media screen and (max-device-width:468px){
-    .jumbotron{
+    #partner-banner{
         height: 25vh;
     }
 }

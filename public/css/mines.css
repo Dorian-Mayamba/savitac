@@ -1,0 +1,38 @@
+/* mines.css */
+
+.mines-content {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.mines-content h1 {
+    color: #007BFF; /* Bootstrap primary blue for consistency */
+    margin-bottom: 15px;
+}
+
+.mines-content h2 {
+    color: #6c757d; /* Bootstrap secondary color */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.mines-content ul {
+    list-style:none;
+}
+
+.mines-content li {
+    margin-bottom: 5px;
+}
+
+.mines-content p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.mines-content .background{
+    background: url('../images/mines-paysage.jpg') no-repeat;
+    background-size:100% 100%;
+    height: 65vh;
+    border-radius: 10px;
+}

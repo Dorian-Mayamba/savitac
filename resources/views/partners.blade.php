@@ -2,10 +2,9 @@
 
 
 @section('content')
-    <div class="jumbotron">
-        
-    </div>
     <div class="container-fluid">
+        <div id="partner-banner"></div>
+
         <div class="row partner-content p-3">
             @foreach ($partners as $partner)
                 <div class="col-md-4 mb-4">
