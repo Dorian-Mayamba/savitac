@@ -12,7 +12,7 @@
                         <img class="w-75" style="aspect-ratio: 2/1;" src="{{ asset($partner->image) }}" alt="image">
                     </div>
                     <h2><small>{{ $partner->name }}</small></h2>
-                    <button onclick="updateModal('{{ env('APP_URL') . '/partenaires-json' }}', this)" id="{{ $partner->id }}"
+                    <button onclick="updateModal('{{ route('partner-json') }}', this)" id="{{ $partner->id }}"
                         data-bs-target="#compagnyModal" data-bs-toggle="modal"
                         class="btn-info btn-sm btn partner-btn text-light">En
                         savoir plus</button>
