@@ -14,9 +14,11 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('users')->insert([
-            ['id' => 1, 'name'=> 'dorian', 'email' => 'dorian.mayamba@savitac.com', 'password' => Hash::make('dodoetienne01'), 'role_id' => 1],
-            ['id' => 2, 'name'=> 'jean-louis', 'email' => 'jlmayamba@savitac.com', 'password' => Hash::make('jletienne01'), 'role_id' => 1]
-        ]);
+        if(!DB::table('users')->select(["*"])->exists()){
+            DB::table('users')->insert([
+                ['id' => 1, 'name'=> 'dorian', 'email' => 'dorian.mayamba@savitac.com', 'password' => Hash::make('dodoetienne01'), 'role_id' => 1],
+                ['id' => 2, 'name'=> 'jean-louis', 'email' => 'jlmayamba@savitac.com', 'password' => Hash::make('jletienne01'), 'role_id' => 1]
+            ]);
+        }
     }
 }

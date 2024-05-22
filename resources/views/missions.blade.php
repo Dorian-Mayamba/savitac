@@ -6,7 +6,7 @@
 	<div id="mission-banner"></div>
 
 
-	<div class="mx-3 row slick-slider">
+	<div class="mx-auto row slick-slider">
 		<div class="col-md-8">
 			<h2 class="text-center text-green"><small>Qualité</small></h2>
 			<p>

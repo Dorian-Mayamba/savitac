@@ -17,8 +17,12 @@ body{
     filter: brightness(90%);
 }
 
-@media screen and (max-device-width:468px){
+@media screen and (max-device-width:475px){
     #partner-banner{
         height: 25vh;
+    }
+
+    .modal-body > .description-container > #description{
+        font-size: .7rem;
     }
 }

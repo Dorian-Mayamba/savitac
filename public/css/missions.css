@@ -8,3 +8,9 @@
     height: 50vh;
     border-radius: 1.2rem;
 }
+
+@media screen and (max-device-width:475px){
+    #mission-banner{
+        height: 35vh;
+    }
+}

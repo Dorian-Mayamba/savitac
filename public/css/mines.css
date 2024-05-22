@@ -36,3 +36,9 @@
     height: 65vh;
     border-radius: 10px;
 }
+
+@media screen and (max-device-width:475px){
+    .mines-content .background{
+        height: 35vh;
+    }
+}

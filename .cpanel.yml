@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+  - export DEPLOYPATH=/home/itym9981/savitac.com
+  - cd $DEPLOYPATH
+  - git pull origin main
