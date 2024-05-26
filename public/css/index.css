@@ -12,3 +12,30 @@
     filter: brightness(70%);
 }
 
+.jumbotron > .welcome-box{
+    padding: 30px;
+}
+
+.container > p {
+    font-size: .9rem;
+}
+
+.col-md-3 > .card > .card-body > p.card-text{
+    font-size:.6rem;
+}
+
+.col-md-3 > .card > img{
+    width: 100%;
+    aspect-ratio: 16/11;
+}
+
+@media screen and (max-device-width:768px){
+    .jumbotron{
+        height: 45vh;
+    }
+
+    .col-md-3{
+        margin: 10px 0px;
+    }
+}
+
