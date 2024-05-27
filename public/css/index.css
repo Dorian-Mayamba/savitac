@@ -1,4 +1,5 @@
-.jumbotron{
+.jumbotron {
+    position: relative;  /* Needed for absolute positioning inside */
     background: url('../images/environment-banner.jpg') no-repeat;
     height: 75vh;
     background-size: 100% 100%;
@@ -8,9 +9,26 @@
     align-items: center;
     color: white;
     font-weight: bold;
-    font-size:1.2rem;
-    filter: brightness(70%);
+    font-size: 1.2rem;
+    overflow: hidden;  /* Ensures nothing spills out */
 }
+
+.jumbotron::before {
+    content: '';  /* Necessary for a pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);  /* Dark overlay, adjust opacity as needed */
+    border-radius: 1.4rem;  /* Match parent's border-radius */
+}
+
+.jumbotron div {
+    position: relative;  /* Makes text appear above overlay */
+    z-index: 1;  /* Ensures text is not behind the overlay */
+}
+
 
 .jumbotron > .welcome-box{
     padding: 30px;
