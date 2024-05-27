@@ -49,11 +49,8 @@
 		<div class="col-md-8">
 			<h2 class="text-center text-green"><small>Affaire</small></h2>
 			<p class="text-center">
-				Impacts & Dangers environnementaux
-
-				Tests en situation d’urgence
-
-				Gestion des déchets
+				Mise en relations des clients avec les entreprises dont les produits
+				répondent a leurs besoins.
 			</p>
 		</div>
 

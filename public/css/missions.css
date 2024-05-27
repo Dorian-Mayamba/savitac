@@ -14,3 +14,15 @@
         height: 35vh;
     }
 }
+
+@media screen and (max-device-width:767px){
+    .col-md-8 > p{
+        font-size: .45rem;
+    }
+}
+
+@media screen and (max-device-width:992px){
+    .col-md-8 > p{
+        font-size: .65rem;
+    }
+}
