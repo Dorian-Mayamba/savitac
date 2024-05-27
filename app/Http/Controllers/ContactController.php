@@ -6,6 +6,7 @@ use App\Http\Requests\ContactRequest;
 use App\Mail\CommentSent;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
@@ -24,5 +25,6 @@ class ContactController extends Controller
 
     public function sendMessage(ContactRequest $request){
         Mail::to(env('MAIL_RECIPIENT'))->send(new CommentSent($request));
+        return back()->with('success', "Votre message a été envoyé");
     }
 }

@@ -42,7 +42,3 @@ Route::middleware('http')->group(function () {
         Route::put('admin/edit/{id}', [EditPartnerController::class, 'editPartner']);
     });
 });
-
-
-
-Auth::routes();

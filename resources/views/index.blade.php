@@ -24,7 +24,7 @@
         <h2 class="text-center"><small>Nos Services</small></h2>
 
         <div class="row w-100 mb-3">
-            <div class="col-md-3">
+            <div class="col-lg-3">
                 {{-- Image --}}
                 <div class="card">
                     <img src="{{ asset('images/audit.jpg') }}" alt="" class="card-img-top">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3">
                 <div class="card">
                     <img src="{{ asset('images/expertise.webp') }}" class="card-img-top">
                     <div class="card-body">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3">
                 <div class="card">
                     <img src="{{ asset('images/consulting.jpg') }}" class="card-img-top">
                     <div class="card-body">
@@ -67,13 +67,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3">
                 <div class="card">
                     <img src="{{ asset('images/apporteur d\'affaires.jpg') }}" class="card-img-top">
                     <div class="card-body">
                         <h4 class="card-title">Apport d'Affaires</h4>
                         <p class="card-text">
-                            Nos nous chargeons de mettre en relation nos clients avec les entreprises dont les produits
+                            Nous nous chargeons de mettre en relation nos clients avec les entreprises dont les produits
                             répondent à
                             leur besoins.
                         </p>
