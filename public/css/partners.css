@@ -19,7 +19,7 @@ body{
 
 @media screen and (max-device-width:475px){
     #partner-banner{
-        height: 25vh;
+        height: 15vh;
     }
 
     .modal-body > .description-container > #description{

@@ -48,7 +48,7 @@
 
 		<div class="col-md-8">
 			<h2 class="text-center text-green"><small>Affaire</small></h2>
-			<p class="text-center">
+			<p>
 				Mise en relations des clients avec les entreprises dont les produits
 				répondent a leurs besoins.
 			</p>

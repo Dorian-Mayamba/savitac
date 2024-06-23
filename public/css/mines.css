@@ -6,15 +6,17 @@
 }
 
 .mines-content h1 {
-    color: #007BFF; /* Bootstrap primary blue for consistency */
     margin-bottom: 15px;
 }
 
 .mines-content h2 {
-    color: #6c757d; /* Bootstrap secondary color */
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 1.2rem;
+}
+
+.mines-content > .content{
+    padding-left: 1.2rem;
 }
 
 .mines-content ul {

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\Admin\AddPartnerController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EditPartnerController;
@@ -26,6 +27,7 @@ Auth::routes();
 Route::middleware('http')->group(function () {
     // --------------------------------------Basic Route---------------------------------------
     Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/about', [AboutController::class, 'about'])->name('about');
     Route::get('/partenaires', [PartnerController::class, 'showPartnerPage'])->name('partner');
     Route::get('/partenaires-json', [PartnerController::class, 'getPartners'])->name('partner-json');
     Route::get('/formations', [FormationController::class, 'showFormationPage'])->name('formations');

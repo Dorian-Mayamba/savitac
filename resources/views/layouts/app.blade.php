@@ -13,7 +13,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    <link rel="icon" href="{{ asset('images/logo-savitac.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('file.ico') }}" type="image/x-icon">
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/layouts.css') }}">
@@ -25,12 +25,14 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
             <div class="container">
                 <div class="img-link">
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="{{ asset('images/logo-savitac.PNG') }}" alt="logo">
+                        <img src="{{ asset('images/file.png') }}" alt="logo">
+                        <h2>{{ env('APP_NAME') }}</h2>
                     </a>
+
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -40,7 +42,9 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a href="{{ route('home') }}"
                                 class="nav-link {{ request()->is('/') ? 'active' : '' }}">Accueil</a>
@@ -54,17 +58,16 @@
                                 class="nav-link {{ request()->is('missions') ? 'active' : '' }}">Nos missions</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('mines') }}" 
-                            class="nav-link {{ request()->is('mines') ? 'active' : '' }}">Mines</a>
+                            <a href="{{ route('mines') }}"
+                                class="nav-link {{ request()->is('mines') ? 'active' : '' }}">Mines</a>
                         </li>
+                        {{-- <li class="nav-item">
+                            <a href="{{ route('about') }}" class="nav-link {{ request()->is('about') ? 'active' : '' }}">A propos</a>
+                        </li> --}}
                         <li class="nav-item">
                             <a href="{{ route('contact') }}"
                                 class="nav-link {{ request()->is('contact') ? 'active' : '' }}">Nous contacter</a>
                         </li>
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
                             {{-- @if (Route::has('login'))
@@ -121,10 +124,38 @@
         <main class="py-4">
             @yield('content')
         </main>
-        <footer class="text-center p-4 bg-primary text-light">
-            &copy; 2024 Copyright:
-            <a href="https://www.fiverr.com/dodomayamba?up_rollout=true">Dorian Mayamba</a>
-        </footer>
+        <section>
+            <footer class="bg-custom-dark text-light">
+                <div class="row w-75 mx-auto">
+                    <div class="col-md-6 col-sm-8">
+                        <div class="contact-detail p-5">
+                            <h2 class="mb-3">Coordonnées</h2>
+                            <p><strong>SAVITAC</strong></p>
+                            <p><span>+33 7 66 50 95 97</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-4 links-content">
+                        <div class="links p-5">
+                            <h2>Liens utiles</h2>
+                            <nav class="navbar navbar-dark">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a class="nav-link {{ request()->is('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a></li>
+                                    <li class="nav-item"><a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="{{ route('home') }}">Accueil</a></li>
+                                    <li class="nav-item"><a class="nav-link {{ request()->is('partenaires') ? 'active' : '' }}" href="{{ route('partner') }}">Partenaires</a></li>
+                                    <li class="nav-item"><a class="nav-link {{ request()->is('missions') ? 'active' : '' }}" href="{{ route('missions') }}">Missions</a></li>
+                                    <li class="nav-item"><a class="nav-link {{ request()->is('mines') ? 'active' : '' }}" href="{{ route('mines') }}">Mines</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <footer class="text-center p-4 bg-dark text-light">
+                &copy; 2024 Copyright:
+                <a href="https://www.fiverr.com/dodomayamba?up_rollout=true">Dorian Mayamba</a>
+            </footer>
+        </section>
+
     </div>
     <script type="text/javascript">
         setTimeout(() => {

@@ -1,5 +1,5 @@
 *{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -7,9 +7,42 @@ div.navbar-collapse > ul.navbar-nav > li.nav-item{
     margin: 0 20px;
 }
 
+div.navbar-collapse > ul.navbar-nav > li.nav-item > .active{
+    background:green;
+    color:white;
+}
+
+div.navbar-collapse > ul.navbar-nav > li.nav-item > .nav-link:hover{
+    background: green;
+    color: white;
+}
+
+.container > .img-link > .navbar-brand > h2{
+    display: inline;
+}
+
+/* .col-md-4 > .logo{
+    background: url('../images/logo-savitac-new.jpg') no-repeat rgba(0, 0, 0, .6);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+} */
+
+footer.bg-custom-dark{
+    background-color: rgba(0, 0, 0, .6);
+}
+
 footer > a{
     text-decoration: none;
     color: white;
+}
+
+.links-content > .links > .navbar > ul.navbar-nav > li.nav-item > a.active{
+    color:rgb(51, 247, 51);
+}
+
+.links-content > .links > .navbar > ul.navbar-nav > li.nav-item > a.nav-link:hover{
+    color:rgb(51, 247, 51);
 }
 
 footer > a:hover{
@@ -18,7 +51,7 @@ footer > a:hover{
 
 @media screen and (min-device-width:1024px){
     .container > .img-link > .navbar-brand > img{
-        width: 150px;
+        width: 60px;
         aspect-ratio: 1/1;
     }
 }
@@ -26,8 +59,13 @@ footer > a:hover{
 
 @media screen and (max-device-width:468px) {
     .container > .img-link > .navbar-brand > img{
-        width: 180px !important;
+        width: 60px !important;
         aspect-ratio: 1/1;
+    }
+
+    div.navbar-collapse > ul.navbar-nav > li.nav-item > .active{
+        color: green;
+        background:none;
     }
 }
 

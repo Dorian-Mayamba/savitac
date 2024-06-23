@@ -2,7 +2,7 @@
     position: relative;  /* Needed for absolute positioning inside */
     background: url('../images/environment-banner.jpg') no-repeat;
     height: 75vh;
-    background-size: 100% 100%;
+    background-size: cover;
     border-radius: 1.4rem;
     display: flex;
     justify-content: center;
@@ -34,12 +34,20 @@
     padding: 30px;
 }
 
+.jumbotron > .welcome-box > p{
+    font-size: 1.2rem;
+}
+
 .container > p {
     font-size: .9rem;
 }
 
+.col-lg-3 > .card{
+    height: 100%;
+}
+
 .col-lg-3 > .card > .card-body > p.card-text{
-    font-size:.65rem;
+    font-size:.88rem;
 }
 
 .col-lg-3 > .card > img{

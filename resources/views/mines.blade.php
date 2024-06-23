@@ -5,11 +5,16 @@
         <h1><small>Restauration des sites miniers</small></h1>
         <div class="background"></div>
         <h2>1. Le contexte environnemental des mines</h2>
-        <p>L’évolution des pratiques minières et les impacts résultants de l’exploitation minière.</p>
-        <p>La remédiation du passif minier.</p>
+        <div class="content">
+            <p>L’évolution des pratiques minières et les impacts résultants de l’exploitation minière.</p>
+            <p>La remédiation du passif minier.</p>
+        </div>
+
 
         <h2>2. La restauration des sites après exploitation</h2>
-        <p>Mise en sécurité et réaménagement durable des sites.</p>
+        <div class="content">
+            <p>Mise en sécurité et réaménagement durable des sites.</p>
+        </div>
 
         <h2>3. Le choix de la restauration écologique</h2>
         <ul>
@@ -20,7 +25,7 @@
             <li>3.5 Les progrès à réaliser</li>
         </ul>
 
-        
+
 
         <h3>Objectifs de la restauration</h3>
         <ul>

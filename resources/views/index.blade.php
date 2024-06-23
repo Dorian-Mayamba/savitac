@@ -5,7 +5,7 @@
     <div class="container">
         <div class="jumbotron mb-4">
             <div class="welcome-box">
-                <h1><small>Savitac</small></h1>
+                <h1><small>SAVITAC</small></h1>
                 <p> Un cabinet spécialisé sur <br />le Conseil en management qualité,<br /> sécurité et affaires.</p>
             </div>
         </div>
@@ -82,7 +82,7 @@
             </div>
         </div>
         <h2 class="text-center"><small>Nos Partenaires:</small></h2>
-        <p>
+        <p class="text-center">
             Savitac est composé de partenaires ayant une expérience spécifique dans leur domaines
             respectifs.
 

@@ -9,20 +9,20 @@
     border-radius: 1.2rem;
 }
 
-@media screen and (max-device-width:475px){
+@media screen and (max-width:475px){
     #mission-banner{
         height: 35vh;
     }
 }
 
-@media screen and (max-device-width:767px){
-    .col-md-8 > p{
-        font-size: .45rem;
+@media screen and (max-width: 992px) {
+    .col-md-8 > p {
+        font-size: .65rem;
     }
 }
 
-@media screen and (max-device-width:992px){
-    .col-md-8 > p{
-        font-size: .65rem;
+@media screen and (max-width: 767px) {
+    .col-md-8 > p {
+        font-size: .47rem;
     }
 }
