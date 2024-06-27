@@ -4,7 +4,6 @@
 @section('content')
     <div class="container">
         <h1 class="text-center">Nous contacter</h1>
-        <h1 class="mb-4">SAVITAC</h1>
         @if (session('success'))
             <div class="alert alert-success">
                 {{ session('success') }}
